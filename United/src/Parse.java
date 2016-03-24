@@ -40,8 +40,14 @@ public class Parse {
 	            
 	            
 	            JSONArray lang = (JSONArray) genreJsonObject.get("award_list");
-	           System.out.println("111"+lang);
-	           JSONObject flightlist = (JSONObject) lang.get(0);
+	            System.out.println("111"+lang);
+	            
+	            JSONObject classList = (JSONObject) lang.get(1);
+	            System.out.println("classList"+classList.get("class_list"));
+	            //JSONArray map = (JSONArray)flightlist.get("flight_list");
+	            
+	            
+	            JSONObject flightlist = (JSONObject) lang.get(0);
 	            System.out.println(flightlist.get("flight_list"));
 	            JSONArray map = (JSONArray)flightlist.get("flight_list");
 	            
